@@ -1,0 +1,18 @@
+[
+  {
+    "name": " A project for CUL-CSC 176",
+    "description": "A simple school project i did.",
+    "link":"/project.html"
+    
+  },
+  {
+    "name": "My personal profile",
+    "description": "this was one of my very first pages.",
+    "link":"/index_guy.html"
+  },
+  {
+    "name": "your product registration",
+    "description": "a product registration page i created,also for a school project.",
+    "link":"/product-registration.html"
+  }
+]

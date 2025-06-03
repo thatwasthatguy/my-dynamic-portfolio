@@ -1,0 +1,149 @@
+/* style.css */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-image: url(images/white.jpg.JPG); background-size: 100%;
+    color: #000000;
+    line-height: 1.6;
+    padding-bottom: 50px; /* Space for footer */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+   background-image: url(images/IMG_4419.JPG);
+    background-color: #ffd8d8;
+    color: #181717;
+}
+
+header {
+    background-color: gray;
+    color: #504949;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+header img {
+    border-radius: 50%;
+    border: 4px solid rgb(7, 6, 6);
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: rgba(80, 74, 74, 0.836);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+body.dark-mode section {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+ h2, h3 {
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode h1 {color: #ddd;}
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #828c91; 
+}
+
+.skill-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-btn {
+    background-color: #5b685e; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.skill-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px); /* Simple hover effect */
+}
+
+#skill-description {
+    margin-top: 15px;
+    font-style: italic;
+    min-height: 20px; /* Prevent layout shift */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:gray;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+}
+
+#themeToggle {
+    background-color: #353534; /* Yellow button */
+    color: #ffffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+
+#themeToggle:hover {
+    background-color: #e0a800;
+}
+
+.ff{
+    display: flexbox;
+}
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: left;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+body.dark-mode .project-card {
+    background-color: #444;
+    border-color: #555;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    color: #656d75;
+    margin-top: 0;
+}
+body.dark-mode .project-card h3 {
+    color: #6d7c81;
+}

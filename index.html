@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images\OITS6496.JPG"width="15%" height="30%"alt="Iyimen Godson Ayomide Profile" id="profile-img">
+        <h1>Howdy yall!,i'm Iyimen Godson Ayomide!. 24/14964</h1>
+        <p>-I love analyzing forex charts and learning new things-</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>i'm an aspiring forex trader as stated in past projects,i love playing games, coding and web development are also starting to become part of my hobbies</p>
+        </section>
+
+        <section id="multimedia-showcase">
+            <h2>My media</h2>
+            <h3>Greetings! :</h3>
+            <audio controls>
+                <source src="media/572935__gertraut_hecher__medieval-fanfare.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Quick motivation:</h3>
+            <video controls width="875" height="300">
+                <source src="media/d9768a72-8ba5-41bb-9c64-2c6de05ffa6a.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="interactive-skills">
+            <h2>My Skills</h2>
+            <div class="skill-buttons">
+                <button class="skill-btn" data-skill="HTML">HTML</button>
+                <button class="skill-btn" data-skill="CSS">CSS</button>
+                <button class="skill-btn" data-skill="JavaScript">JavaScript</button>
+            </div>
+            <p id="skill-description">Click a skill to learn more!</p>
+        </section>
+
+        <section id="portfolio-list">
+            <h2>My Projects</h2>
+            <div id="projects-container">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Iyimen Godson. All rights reserved.</p>
+        GMAIL-goimedias@gmail.com
+       <p><button id="themeToggle">Toggle Dark Mode</button></p> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Product Registration Form</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: Arial, sans-serif;
+background: #f8f8f8;
+padding: 20px;
+background-image: url(images/BLACK-GUY.JPG.JPG);
+background-repeat: no-repeat;
+background-size: 200%;
+}
+h1 {
+color: white;
+text-align: center;
+margin-bottom: 20px;
+font-size: 2.5em;
+}
+* Making the form look slick */
+.form-container {
+background: #fff;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+max-width: 600px;
+margin: 0 auto;
+}
+label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+color: #ffffff;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 1em;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder { color: #888; }
+input[type="checkbox"] { margin-right: 10px; }
+.form-actions { text-align: right; }
+input[type="submit"] {
+background: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+input[type="submit"]:hover {
+background: #45a049;
+transform: scale(1.05);
+transition: all 0.3s;
+}
+input[type="reset"] {
+background: #f44336;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-right: 10px;
+}
+input[type="reset"]:hover {
+background: #d32f2f;
+transform: scale(1.05);
+transition: all 0.3s;
+}
+fieldset {
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 15px;
+margin-bottom: 20px;
+}
+legend {
+color: #fff6f6;
+font-weight: bold;
+padding: 0 10px;
+}
+/* Table styling */
+table {
+width: 80%;
+border-collapse: collapse;
+margin: 40px auto;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+th, td {
+border: 1px solid #ccc;
+padding: 12px;
+text-align: left;
+color: #333;
+}
+th {
+background: #4CAF50;
+color: #fff;
+}
+tr:nth-child(even) { background: #f2f2f2; }
+tr:hover { background: #e0f7fa; transition:background
+0.3s; }
+caption {
+font-size: 1.5em;
+font-weight: bold;
+color: #333;
+margin-bottom: 10px;
+}
+.product-icon {
+display: block;
+margin: 20px auto;
+max-width: 100px;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+/* Fun cursor effect */
+.custom-cursor {
+position: fixed;
+width: 20px;
+height: 20px;
+background: rgba(76, 175, 80, 0.5);
+border-radius: 50%;
+pointer-events: none;
+z-index: 9999;
+}
+@media (max-width: 768px) {
+.form-container { padding: 20px; }
+table { width: 90%; }
+}
+
+</style>
+</head>
+<body>
+<div class="custom-cursor"></div>
+<h1>Register Your Product</h1>
+<img src="images/IMG_E1900.JPG" alt="Product Icon class="product icon; width="200px" height="200px">
+<div class="form-container">
+<form id="registrationForm" action="/
+submit_product_registration" method="POST">
+<fieldset>
+<legend>Product Details</legend>
+<label for="productName">Product Name :</label>
+<input type="text" id="productName"
+name="productName" placeholder="e.g., CyberGuard
+Antivirus" required>
+<label for="productCategory">Product
+Category :</label>
+<select id="productCategory"
+name="productCategory">
+<option value=""> -- Please choose an option --</option>
+
+<option value="electronics">Electronics</option>
+
+<option value="appliances">Home Appliances</option>
+
+<option value="appliances">Home Appliances</option>
+
+<option value="clothing">Clothing</option>
+<option value="books">Books</option>
+</select>
+<label for="purchaseDate">Purchase Date :</label>
+
+<input type="date" id="purchaseDate"
+name="purchaseDate">
+<label for="serialNumber">Serial Number :</label>
+<input type="text" id="serialNumber"
+name="serialNumber" placeholder="e.g., CG-
+AV-987654321">
+</fieldset>
+<fieldset>
+<legend>Your Information</legend>
+<label for="userEmail">Your Email :</label>
+<input type="email" id="userEmail"
+name="userEmail" placeholder="you@example.com"
+required>
+<label>
+<input type="checkbox" id="warrantyOptln"
+name="warrantyOptIn" value="yes">
+Opt-in for extended warranty
+</label>
+<label for="comments">Additional Comments :</label>
+
+<textarea id="comments" name="comments"
+rows="5" placeholder="Enter any additional comments
+here ... "></textarea>
+</fieldset>
+<div class="form-actions">
+<input type="reset" value="Reset Form">
+<input type="submit" value="Register Product">
+</div>
+</form>
+</div>
+<table>
+<caption>Product Compatibility</caption>
+<thead>
+<tr>
+    <th>Device Type</th>
+    <th>Operating System</th>
+    <th>Compatible Versions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Laptop</td>
+    <td>Windows</td>
+    <td>10, 11</td>
+    </tr>
+    <tr>
+    <td>Smartphone</td>
+    <td>Android</td>
+    <td>12, 13, 14</td>
+    </tr>
+    <tr>
+    <td>Tablet</td>
+    <td>iOS</td>
+    <td>15, 16</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+    <td colspan="3">Data accurate as of May 27,
+    2025</td>
+    </tr>
+    </tfoot>
+    </table>
+    <script>
+    // Form submission alert
+    document.getElementByld('registrationForm').addEventLis
+    tener('submit', e => {
+    e.preventDefault();
+    const name =
+    document.getElementByld('productName').value;
+    alert(Product ${name}registered successfully!);
+    e.target.reset();
+    });
+    // Custom cursor movement
+const cursor = document.querySelector('.customcursor');
+document.addEventListener('mousemove', e => {
+cursor.style.left = ${e.clientX - 10}px;
+});
+cursor.style.top = ${e.clientY - 10}px;
+
+// Simple hover animation for form inputs
+document.querySelectorAll('.form-control').forEach(input => {
+input.addEventListener('focus', () => {
+input.style.borderColor = '#4CAF50';
+input.style.boxShadow = '0 0 5px rgba(76, 175, 80,0.5)';
+});
+input.addEventListener('blur', () => {
+input.style.borderColor = '#ccc';
+input.style.boxShadow = 'none';
+});
+});
+</script>
+</body>
+</html>
